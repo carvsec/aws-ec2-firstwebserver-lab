@@ -60,4 +60,4 @@ A origem exata permitida nas regras do Security Group (se SSH estava restrito a 
 
 ---
 
-*Laboratório realizado por [Pedro Carvalho](https://github.com/carvsec) — Escola da Nuvem, trilha AWS re/Start.*
+*Laboratório realizado na Escola da Nuvem, trilha AWS re/Start.*
