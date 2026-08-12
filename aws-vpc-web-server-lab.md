@@ -1,6 +1,6 @@
 # Laboratório: Arquitetura de Rede AWS (VPC + EC2 + Apache) — Escola da Nuvem
 
-Laboratório guiado durante o curso **Fundamentos de Computação em Nuvem (AWS re/Start)** da Escola da Nuvem, com o objetivo de montar uma arquitetura de rede básica na AWS e subir um servidor web funcional dentro dela.
+Laboratório guiado durante o curso **Fundamentos de Computação em Nuvem AWS re/Start da Escola da Nuvem, com o objetivo de montar uma arquitetura de rede básica na AWS e subir um servidor web funcional dentro dela.
 
 ---
 
@@ -24,20 +24,19 @@ Praticar os conceitos centrais de rede em nuvem — segmentação de sub-redes, 
 | VPC Endpoints | Nenhum |
 | Tenancy | Default |
 
-A divisão em sub-redes públicas e privadas, replicada em duas Availability Zones, segue o princípio de **alta disponibilidade por design**: mesmo com apenas uma instância ativa neste laboratório, a estrutura já nasce pronta para redundância — se uma AZ cair, a segunda sub-rede pública/privada está disponível para assumir a carga.
 
 ---
 
 ## O que foi construído
 
 1. **Criação da VPC e das sub-redes públicas e privadas**
-   VPC `10.0.0.0/16` criada com quatro sub-redes (duas públicas, duas privadas) distribuídas em duas Availability Zones, isolando o que precisa de exposição à internet do que não precisa.
+   VPC `10.0.0.0/16` criada com quatro sub-redes duas públicas e duas privadas distribuídas em duas Availability Zones, isolando o que precisa de exposição à internet do que não precisa.
 
 2. **Configuração de Security Groups**
    Regras de firewall aplicadas na instância, liberando explicitamente as portas necessárias para a operação do laboratório: **SSH (22)**, para acesso administrativo remoto, e **HTTP (80)**, para acesso ao servidor web. Qualquer outra porta permanece fechada por padrão — prática de menor privilégio aplicada à rede.
 
-3. **Execução de instância EC2 (t3.micro) com Amazon Linux**
-   Provisionamento de uma instância `t3.micro` (free tier) dentro da sub-rede pública, servindo como host do servidor web.
+3. **Execução de instância EC2 com Amazon Linux**
+   Provisionamento de uma instância `t3.micro` dentro da sub-rede pública, servindo como host do servidor web.
 
 4. **Instalação e configuração de servidor Apache via SSH**
    Conexão remota via SSH na instância e instalação do Apache HTTP Server, deixando a página web acessível externamente através da porta liberada no Security Group.
@@ -46,11 +45,11 @@ A divisão em sub-redes públicas e privadas, replicada em duas Availability Zon
 
 ## Conceitos praticados
 
-- Planejamento de CIDR e segmentação de rede (pública vs. privada) como base de arquitetura segura por design
+- Planejamento de CIDR e segmentação de rede pública vs. privada como base de arquitetura segura por design
 - Distribuição em múltiplas Availability Zones como fundamento de alta disponibilidade
-- Security Groups como camada de controle de tráfego (stateful firewall na borda da instância)
+- Security Groups como camada de controle de tráfego stateful firewall na borda da instância
 - Acesso remoto seguro via SSH para administração de servidor
-- Relação direta entre regra de rede (Security Group) e serviço exposto (Apache na porta HTTP)
+- Relação direta entre regra de rede Security Group e serviço exposto Apache na porta HTTP
 
 ---
 
