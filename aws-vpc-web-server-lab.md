@@ -1,4 +1,4 @@
-# Laboratório: Arquitetura de Rede AWS (VPC + EC2 + Apache) — Escola da Nuvem
+# Laboratório: Arquitetura de Rede AWS VPC + EC2 + Apache — Escola da Nuvem
 
 Laboratório guiado durante o curso **Fundamentos de Computação em Nuvem AWS re/Start da Escola da Nuvem, com o objetivo de montar uma arquitetura de rede básica na AWS e subir um servidor web funcional dentro dela.
 
