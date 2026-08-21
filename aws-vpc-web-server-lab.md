@@ -1,4 +1,4 @@
-# Laboratório: Arquitetura de Rede AWS VPC + EC2 + Apache — Escola da Nuvem
+# Laboratório: Arquitetura de Rede AWS VPC, EC2, Apache com a Escola da Nuvem
 
 Laboratório guiado durante o curso **Fundamentos de Computação em Nuvem AWS re/Start da Escola da Nuvem, com o objetivo de montar uma arquitetura de rede básica na AWS e subir um servidor web funcional dentro dela.
 
@@ -6,7 +6,7 @@ Laboratório guiado durante o curso **Fundamentos de Computação em Nuvem AWS r
 
 ## Objetivo
 
-Praticar os conceitos centrais de rede em nuvem — segmentação de sub-redes, controle de tráfego por Security Groups e provisionamento de instâncias — construindo, do zero, o ambiente que sustenta uma aplicação web simples.
+Praticar os conceitos centrais de rede em nuvem, segmentação de sub-redes, controle de tráfego por Security Groups e provisionamento de instâncias, construindo, do zero, o ambiente que sustenta uma aplicação web simples.
 
 ---
 
